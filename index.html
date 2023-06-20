@@ -1,92 +1,91 @@
 <!DOCTYPE html>
 <html lang="ko">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport">
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
-  </head>
+</head>
 
-  <body>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"></script>
-    <div class="container">
-      <div class="row p-3"> <!--기초 정보 입력 행-->
-        <div class="col-6"> <!--마스터리 선택 라디오 열-->
-          <div class="d-grid gap-5">
-            <div class="form-check"> <!--마1-->
-              <input class="form-check-input" type="radio" name="skillMastery"
-                value="8"
-                id="skillMastery1">
-              <label class="form-check-label" for="skillMastery1">
-                마스터리 1
-              </label>
-            </div>
-            <div class="form-check"> <!--마2-->
-              <input class="form-check-input" type="radio" name="skillMastery"
-                value="16"
-                id="skillMastery2">
-              <label class="form-check-label" for="skillMastery2">
-                마스터리 2
-              </label>
-            </div>
-            <div class="form-check"> <!--마3-->
-              <input class="form-check-input" type="radio" name="skillMastery"
-                value="24"
-                id="skillMastery3">
-              <label class="form-check-label" for="skillMastery3">
-                마스터리 3
-              </label>
-            </div>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <div class="container">
+    <div class="row">
+      <img src="image\screenshot.png" class="img-fluid p-3">
+    </div>
+  </div>
+  <div class="container">
+    <div class="row p-3"> <!--기초 정보 입력 행-->
+      <div class="col-6"> <!--마스터리 선택 라디오 열-->
+        <div class="d-grid gap-5">
+          <div class="form-check"> <!--마1-->
+            <input class="form-check-input" type="radio" name="skillMastery" value="8" id="skillMastery1">
+            <label class="form-check-label" for="skillMastery1">
+              마스터리 1
+            </label>
           </div>
-        </div>
-
-        <div class="col-6">
-          <div class="d-grid gap-5">
-            <div class> <!--훈련 효율-->
-              <input type="number" class="form-control" placeholder="훈련소 스킬%"
-                id="trainSpeed"
-                aria-label="trainingSpeed"
-                aria-describedby="basic-addon1">
-            </div>
-            <div class="form-check"> <!--근위/사수-->
-              <input class="form-check-input" type="checkbox" value
-                id="ireneSkillApplied">
-              <label class="form-check-label" for="ireneSkillApplied">
-                가드/스나이퍼임
-              </label>
-            </div>
-            <div class="form-check"> <!--아이린-->
-              <input class="form-check-input" type="checkbox" value id="irene">
-              <label class="form-check-label" for="irene">
-                아이린 적용됨
-              </label>
-            </div>
+          <div class="form-check"> <!--마2-->
+            <input class="form-check-input" type="radio" name="skillMastery" value="16" id="skillMastery2">
+            <label class="form-check-label" for="skillMastery2">
+              마스터리 2
+            </label>
+          </div>
+          <div class="form-check"> <!--마3-->
+            <input class="form-check-input" type="radio" name="skillMastery" value="24" id="skillMastery3">
+            <label class="form-check-label" for="skillMastery3">
+              마스터리 3
+            </label>
           </div>
         </div>
       </div>
-      <div class="row p-3"> <!--계산 버튼 행-->
-        <div class="col-auto p-3">
-          <button type="submit" class="btn btn-primary" onclick="trainingCalc()">계산!</button>
-        </div>
-      </div>
-      <div class="row p-3"> <!--계산 결과 행-->
-        <div id="finalresult2"><p class="fs-1">NN:NN:NN</p></div>
-        <p>지나고 나서 교체하기, 즉</p>
-        <p>훈련소에서 보이는 시간이 약</p>
-        <div id="finalresult1"><p class="fw-bold fs-1">NN:NN:NN</p></div>
-        <p>일 때 아이린으로 교체하기!!</p>
 
+      <div class="col-6">
+        <div class="d-grid gap-5">
+          <div class> <!--훈련 효율-->
+            <input type="number" class="form-control" placeholder="훈련소 스킬%" id="trainSpeed" aria-label="trainingSpeed"
+              aria-describedby="basic-addon1">
+          </div>
+          <div class="form-check"> <!--근위/사수-->
+            <input class="form-check-input" type="checkbox" value id="ireneSkillApplied">
+            <label class="form-check-label" for="ireneSkillApplied">
+              가드/스나이퍼
+            </label>
+          </div>
+          <div class="form-check"> <!--아이린-->
+            <input class="form-check-input" type="checkbox" value id="irene">
+            <label class="form-check-label" for="irene">
+              아이린 적용됨
+            </label>
+          </div>
+        </div>
       </div>
     </div>
-    <script src="js/calculate.js"></script>
-  </body>
+    <div class="row p-3"> <!--계산 버튼 행-->
+      <div class="col-auto p-3">
+        <button type="submit" class="btn btn-primary" onclick="trainingCalc()">계산!</button>
+      </div>
+    </div>
+    <div class="row p-3"> <!--계산 결과 행-->
+      <div id="finalresult2">
+        <p class="fs-1">NN:NN:NN</p>
+      </div>
+      <p>지나고 나서 교체하기, 즉</p>
+      <p>훈련소에서 보이는 시간이 약</p>
+      <div id="finalresult1">
+        <p class="fw-bold fs-1">NN:NN:NN</p>
+      </div>
+      <p>일 때 아이린으로 교체하기!!</p>
+
+    </div>
+  </div>
+  <script src="js/calculate.js"></script>
+</body>
+<footer>
+
+</footer>
 
 </html>
