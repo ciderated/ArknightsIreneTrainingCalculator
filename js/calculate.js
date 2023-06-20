@@ -49,11 +49,11 @@ function trainingCalc() { // 훈련 계산
     let time2Change2 = ((appliedTime - ireneNeed) / (finalTrainSpeed));
 
     if (appliedTime - ireneNeed < 0) {
-        resultElement.innerHTML = "<p class=\"fs-1\">NN:NN:NN</p>";
-        result2Element.innerHTML = "<p class=\"fw-bold fs-1\">아이린 사용 불가!</p>";
+        resultElement.innerHTML = "<h1>NN:NN:NN</h1>";
+        result2Element.innerHTML = "<h1>아이린 사용 불가!</h1>";
     } else {
-        resultElement.innerHTML = "<p class=\"fw-bold fs-1\">" + convertTime(time2Change) + "</p>";
-        result2Element.innerHTML = "<p class=\"fs-1\">" + convertTime(time2Change2) + "</p>";
+        resultElement.innerHTML = "<h1>" + convertTime(time2Change) + "</h1>";
+        result2Element.innerHTML = "<h1>" + convertTime(time2Change2) + "</h1>";
     }
     
     
