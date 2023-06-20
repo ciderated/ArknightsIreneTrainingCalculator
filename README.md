@@ -1,4 +1,4 @@
-# ArknightsIreneTrainingCalculator
+# IreneTraningCalc
 ## 기능
 
 - 게임 [명일방주](https://arknights.kr/) 내, 기반시설 중 훈련소의 시간 계산을 원활히 하기 위함
@@ -11,3 +11,9 @@
 - 훈련받는 오퍼레이터의 직군이 가드 혹은 스나이퍼라면 체크합니다
 - 이전 훈련에 아이린을 5시간 이상 사용했다면 체크합니다
 - 계산 버튼을 누릅니다!
+
+## 버그 제보 및 건의
+
+- [Issues](https://github.com/ciderated/IreneTrainingCalc/issues)에 이슈를 생성해주시면 확인 후 개선하겠습니다.
+
+
