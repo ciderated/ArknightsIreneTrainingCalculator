@@ -1,4 +1,4 @@
-# IreneTraningCalc
+# IreneTrainingCalc
 ## 기능
 
 - 게임 [명일방주](https://arknights.kr/) 내, 기반시설 중 훈련소의 시간 계산을 원활히 하기 위함
