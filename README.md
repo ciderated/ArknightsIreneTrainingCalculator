@@ -6,11 +6,14 @@
 
 ## 사용법
 
-- 이번 훈련소 사용으로 도달할 마스터리를 선택합니다
+- 이번 훈련소 사용으로 도달할 마스터리를 선택합니다  
+![image](https://github.com/ciderated/IreneTrainingCalc/assets/64792539/f81a57c9-3184-4563-b832-2ebd9eb26ad8)
 - 아이린 투입 이전 사용할 트레이너 오퍼레이터의 훈련 속도 증가량을 기입합니다
 - 훈련받는 오퍼레이터의 직군이 가드 혹은 스나이퍼라면 체크합니다
-- 이전 훈련에 아이린을 5시간 이상 사용했다면 체크합니다
-- 계산 버튼을 누릅니다!
+- 이전 훈련에 아이린을 5시간 이상 사용했다면 체크합니다  
+![image](https://github.com/ciderated/IreneTrainingCalc/assets/64792539/8fff74a0-16e5-4a72-8931-5e959ab1e003)
+- 계산 버튼을 누르고 결과를 확인합니다!  
+![image](https://github.com/ciderated/IreneTrainingCalc/assets/64792539/f187e53e-f6a3-4027-93d5-746d7490ef26)
 
 ## 버그 제보 및 건의
 
