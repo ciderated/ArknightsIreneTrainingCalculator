@@ -55,16 +55,4 @@ function trainingCalc() { // 훈련 계산
         resultElement.innerHTML = "<h1>" + convertTime(time2Change) + "</h1>";
         result2Element.innerHTML = "<h1>" + convertTime(time2Change2) + "</h1>";
     }
-    
-    
-}
-
-function convertTime(inputTime) {
-    inputTime = Math.round(inputTime)
-    let hour = parseInt(inputTime / 3600);
-    let minute = parseInt((inputTime % 3600) / 60);
-    let second = parseInt(inputTime % 60)
-
-    let result = String(hour).padStart(2, '0') + ":" + String(minute).padStart(2, '0') + ":" + String(second).padStart(2, '0');
-    return result;
 }
