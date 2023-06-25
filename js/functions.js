@@ -14,7 +14,6 @@ function convertTime(inputTime) {
 
 function displayImage() {
     let displaying = document.getElementById("imageSet");
-    console.log(isMobile());
     if (isMobile()) {
         displaying.innerHTML = "<img src=\"image\\mobileres.png\" class=\"img-fluid p-3\" style=\"max-width: 75%; min-width: 500px;\">";
     } else {
