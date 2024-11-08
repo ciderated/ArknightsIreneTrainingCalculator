@@ -15,9 +15,9 @@ function convertTime(inputTime) {
 function displayImage() {
     let displaying = document.getElementById("imageSet");
     if (isMobile()) {
-        displaying.innerHTML = "<img src=\"image\\mobileres.png\" class=\"img-fluid p-3\" style=\"max-width: 75%; min-width: 500px;\">";
+        displaying.innerHTML = "<img src=\"image\\mobileres.png\" class=\"img-fluid p-3\" style=\"max-width: 75%;\">";
     } else {
-        displaying.innerHTML = "<img src=\"image\\screenshot.png\" class=\"img-fluid p-3\" style=\"max-width: 75%; min-width: 770px;\">";
+        displaying.innerHTML = "<img src=\"image\\screenshot.png\" class=\"img-fluid p-3\" style=\"max-width: 75%; min-width: 360px;\">";
     }
 }
 
