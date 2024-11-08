@@ -56,7 +56,6 @@ function trainingCalc() { // 훈련 계산
 
     let time2Change = (appliedTime / finalTrainSpeed) - ((appliedTime - ireneNeed) / finalTrainSpeed);
     let time2Change2 = ((appliedTime - ireneNeed) / (finalTrainSpeed));
-    console.log(appliedTime / finalTrainSpeed);
     if (appliedTime - ireneNeed < 0) {
         resultElement.innerHTML = "<h1>NN:NN:NN</h1>";
         result2Element.innerHTML = "<h1>아이린 사용 불가!</h1>";
