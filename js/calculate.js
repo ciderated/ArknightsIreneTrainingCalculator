@@ -3,11 +3,20 @@ let ireneMultiplier = 1;
 let ireneSpeed;
 let ireneNeed;
 let trainSpeed;
+let ascalonSkill;
 let selectedValue;
 
 function trainingSpeed() { // 훈련 속도
     let ireneApplied = document.getElementById("irene").checked;
-    trainSpeed = (document.getElementById("trainSpeed").value) / 100;
+    let ascalonApplied = document.getElementById("ascalonApplied").checked;
+
+    if (ascalonApplied == true) {
+        ascalonSkill = 0.05;
+    } else {
+        ascalonSkill = 0;
+    }
+
+    trainSpeed = (document.getElementById("trainSpeed").value) / 100 + ascalonSkill;
 
     if (ireneApplied == true) {
         ireneMultiplier = 0.5;
