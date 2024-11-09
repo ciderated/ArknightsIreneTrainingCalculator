@@ -52,7 +52,7 @@ function trainingCalc() { // 훈련 계산
     let appliedTime = trainTime * ireneMultiplier; // 아이린 적용 후
     let finalTrainSpeed = 1 + trainSpeed + 0.05; // 최종 훈련 가속
 
-    ireneNeed = 5 * 3600 * (1 + ireneSpeed + 0.05);
+    ireneNeed = 5 * 3600 * (1 + ireneSpeed + 0.05 + ascalonSkill);
 
     let time2Change = (appliedTime / finalTrainSpeed) - ((appliedTime - ireneNeed) / finalTrainSpeed);
     let time2Change2 = ((appliedTime - ireneNeed) / (finalTrainSpeed));
@@ -63,4 +63,5 @@ function trainingCalc() { // 훈련 계산
         resultElement.innerHTML = "<h1>" + convertTime(time2Change) + "</h1>";
         result2Element.innerHTML = "<h1>" + convertTime(time2Change2) + "</h1>";
     }
+    console.log(ascalonSkill, finalTrainSpeed, time2Change, time2Change2);
 }
